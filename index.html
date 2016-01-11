@@ -2,344 +2,300 @@
 <html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SHEDS is a collection of innovative data visualization tools for exploring dynamic relationships in stream ecosystems.">
+  <meta name="author" content="Jeffrey D. Walker, PhD">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <title>SHEDS</title>
 
-    <title>SHEDS</title>
+  <link href="/bower_components/landing-page/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/bower_components/landing-page/css/landing-page.css" rel="stylesheet">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="/bower_components/landing-page/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/bower_components/landing-page/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- Custom CSS -->
-    <link href="/bower_components/landing-page/css/landing-page.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
 
-    <!-- Custom Fonts -->
-    <link href="/bower_components/landing-page/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <style>
+    .intro-header {
+      background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) ),url(/img/splash_1900px_1000px.jpg) no-repeat center center;
+      max-height: 800px;
+    }
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    .intro-message {
+      padding-top: 10%;
+      padding-bottom: 5%;
+    }
 
-    <style>
-        .intro-header {
-            background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) ),url(/img/splash_1900px_1000px.jpg) no-repeat center center;
-        }
+    .funding-section img {
+      margin: 10px 25px 10px 25px;
+    }
 
-        .funding-section img {
-            margin: 10px 25px 10px 25px;
-        }
-    </style>
+    body {
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    .img-responsive {
+      max-width: 100%;
+      padding: 10px;
+    }
+
+    p.description {
+      color: #888888;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+  </style>
 
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="//ecosheds.org">SHEDS</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#datasets">Datasets</a>
-                    </li>
-                    <li>
-                        <a href="#models">Models</a>
-                    </li>
-                    <li>
-                        <a href="#decisions">Decision Tools</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-
-    <!-- Header -->
-    <div class="intro-header">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>Spatial Hydro-Ecological Decision System (SHEDS)</h1>
-                        <h3>Seamlessly linking hydro-ecological datasets, models, and decision support systems</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="#about" class="btn btn-primary btn-lg"><i class="fa fa-database fa-fw"></i> <span class="network-name">What is Sheds?</span></a>
-                            </li>
-                            <li>
-                                <a href="#team" class="btn btn-primary btn-lg"><i class="fa fa-users fa-fw"></i> <span class="network-name">SHEDS Team</span></a>
-                            </li>
-                        </ul>
-                        <!-- <hr class="intro-divider"> -->
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="#datasets" class="btn btn-default btn-lg"><i class="fa fa-database fa-fw"></i> <span class="network-name">Datasets</span></a>
-                            </li>
-                            <li>
-                                <a href="#models" class="btn btn-default btn-lg"><i class="fa fa-bar-chart fa-fw"></i> <span class="network-name">Models</span></a>
-                            </li>
-                            <li>
-                                <a href="#decisions" class="btn btn-default btn-lg"><i class="fa fa-lightbulb-o fa-fw"></i> <span class="network-name">Decision Tools</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
+  <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <div class="container topnav">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand topnav" href="//ecosheds.org">SHEDS</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#datasets">Datasets</a>
+          </li>
+          <li>
+            <a href="#models">Models</a>
+          </li>
+          <li>
+            <a href="#decisions">Decision Tools</a>
+          </li>
+          <li>
+            <a href="#team">Team</a>
+          </li>
+          <li>
+            <a href="#funding">Funding</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!-- /.intro-header -->
+  </nav>
 
-    <!-- Page Content -->
-    <a name="about"></a>
-    <div class="content-section-a">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">What is SHEDS?</h2>
-                    <p class="lead">SHEDS is a web application that seamlessly links hydro-ecological datasets, models, and decision support systems.</p>
-                    <p class="lead">The goal is to develop tools for gaining insight, improving decision making, and supporting better management of hydro-ecological resources.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="bower_components/landing-page/img/ipad.png" alt="">
-                </div>
-            </div>
-
+  <div class="intro-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="intro-message">
+            <h1>Spatial Hydro-Ecological Decision System (SHEDS)</h1>
+            <h3>Seamlessly linking hydro-ecological datasets, models, and decision support systems</h3>
+            <!-- <hr class="intro-divider"> -->
+          </div>
         </div>
-        <!-- /.container -->
-
+      </div>
     </div>
-    <!-- /.content-section-a -->
+  </div>
 
-    <a  name="datasets"></a>
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Datasets</h2>
-                    <p class="lead">
-                        <ul>
-                            <li><a href="//db.ecosheds.org">Stream Temperature Database</a></li>
-                            <li>High Resolution Catchment Delineation</li>
-                            <li>Fish Database</li>
-                            <li>Culvert Database</li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/stream-temp-db.png" alt="">
-                </div>
-            </div>
-
+  <a name="about"></a>
+  <div class="content-section-a">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="section-heading">What is SHEDS?</h2>
+          <p class="lead">SHEDS is a collection of innovative data visualization and decision support tools for exploring and better understanding dynamic relationships in stream ecosystems.</p>
+          <p class="lead">SHEDS seamlessly links datasets, models, and decision support systems into a powerful platform for gaining insight, supporting transparent decision making, and improving management of hydro-ecological resources.</p>
         </div>
-        <!-- /.container -->
-
+        <div class="col-sm-6">
+          <img class="img-responsive" src="img/diagram.png" alt="">
+        </div>
+      </div>
     </div>
-    <!-- /.content-section-b -->
+  </div>
 
-    <a  name="models"></a>
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Models</h2>
-                    <p class="lead">
-                        <p>The databases are fed into predictive models.</p>
-                        <ul>
-                            <li>Stream Temperature</li>
-                            <li>Fish Occupancy</li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/module-stream-temp-model.png" alt="">
-                </div>
-            </div>
-
+  <a name="datasets"></a>
+  <div class="content-section-b">
+    <div class="container">
+      <h1 class="section-heading">Datasets</h1>
+      <div class="row">
+        <div class="col-md-8 col-md-push-4 col-sm-6 col-sm-push-6">
+          <div class="lead">
+            <h3><a href="http://db.ecosheds.org">Stream Temperature Database</a></h3>
+            <p class="description">
+              The stream temperature database stores regional stream temperature data across multiple agencies in the Northeastern U.S. These datasets are then used to support the modeling and decision support systems.
+            </p>
+            <a href="http://db.ecosheds.org">http://db.ecosheds.org</strong></a>
+          </div>
         </div>
-        <!-- /.container -->
-
+        <div class="col-md-4 col-md-pull-8 col-sm-6 col-sm-pull-6">
+          <img class="img-responsive" src="img/stream-temp-db.png" alt="">
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-8 col-md-push-4 col-sm-6 col-sm-push-6">
+          <div class="lead">
+            <h3>High Resolution Catchment Delineation</h3>
+            <p class="description">
+              A series of GIS layers representing hydrologic catchments and flowlines spanning the Northeast region of the United States.
+            </p>
+            <em>Coming Soon</em>
+          </div>
+        </div>
+        <div class="col-md-4 col-md-pull-8 col-sm-6 col-sm-pull-6">
+        </div>
+      </div>
     </div>
-    <!-- /.content-section-a -->
+  </div>
 
-    <a  name="decisions"></a>
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Decision Tools</h2>
-                    <p class="lead">
-                        <ul>
-                            <li><a href="//ice.ecosheds.org">Interactive Catchment Explorer</a></li>
-                            <li></li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="bower_components/landing-page/img/dog.png" alt="">
-                </div>
-            </div>
-
+  <a name="models"></a>
+  <div class="content-section-a">
+    <div class="container">
+      <h2 class="section-heading">Models</h2>
+      <div class="row">
+        <div class="col-lg-8 col-sm-6">
+          <div class="lead">
+            <h3><a href="https://peerj.com/preprints/1578/">Stream Temperature Model</a></h3>
+            <p class="description">
+              The stream temperature model is a nested, hierarchical, Bayesian model that predicts daily stream temperature based on catchment characteristics and weather conditions.
+            </p>
+            <a href="https://peerj.com/preprints/1578/">Pre-print Article</a>
+          </div>
         </div>
-        <!-- /.container -->
-
+        <div class="col-lg-4 col-sm-6">
+          <img class="img-responsive" src="img/module-stream-temp-model.png" alt="">
+        </div>
+      </div>
     </div>
-    <!-- /.content-section-b -->
+  </div>
 
-    <a  name="team"></a>
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Project Team</h2>
-                    <p class="lead">
-                        <ul class="list-unstyled">
-                            <li>Dr. Ben Letcher: project manager</li>
-                            <li>Dr. Jeffrey D. Walker: lead application developer</li>
-                            <li>Matt Hodge: application developer</li>
-                            <li>Chris Jennison: application developer and server administrator</li>
-                            <li>Kyle O'Neil, Ana Rosner: database support</li>
-                            <li>Dr. Dan Hocking, Dr. Yoichiro Kanno, Evan Childress and Ana Rosner: model developers</li>
-                            <li>Dr. Evan Grant, Dr. Rachel Katz: decision support researchers</li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="bower_components/landing-page/img/phones.png" alt="">
-                </div>
-            </div>
-
+  <a  name="decisions"></a>
+  <div class="content-section-b">
+    <div class="container">
+      <h2 class="section-heading">Decision Tools</h2>
+      <div class="row">
+        <div class="col-md-8 col-md-push-4 col-sm-6 col-sm-push-6">
+          <div class="lead">
+            <h3><a href="http://ice.ecosheds.org">Interactive Catchment Explorer</a></h3>
+            <p class="description">The Interactive Catchment Explorer is a dynamic visualization tool for exploring catchment characteristics and model predictions, and for identifying priority catchments across the Northeast region of the United States.</p>
+            <p><a href="http://ice.ecosheds.org">http://ice.ecosheds.org</a></p>
+            <p class="description">
+              Customized versions of ICE are also available for the following programs and datasets:
+              <ul>
+                <li><a href="http://ice-champ.ecosheds.org">ICE-CHaMP</a>: Columbia River Habitat Monitoring Program</li>
+                <li><a href="http://ice-ebtjv.ecosheds.org">ICE-EBTJV</a>: Eastern Brook Trout Joint Venture</li>
+                <li><a href="http://ice-deerfield.ecosheds.org">ICE-Deerfield</a>: Deerfield River Watershed</li>
+              </ul>
+            </p>
+          </div>
         </div>
-        <!-- /.container -->
-
+        <div class="col-md-4 col-md-pull-8 col-sm-6 col-sm-pull-6">
+          <img class="img-responsive" src="img/module-ice.gif" alt="">
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-8 col-md-push-4 col-sm-6 col-sm-push-6">
+          <div class="lead">
+            <h3><a href="http://ecosheds.org:8080/geoserver/www/Web_Map_Viewer.html">Eastern Brook Trout Joint Venture Data &amp; Tools</a></h3>
+            <p class="description">
+              Interactive GIS map featuring data layers (brook trout status and habitat patches) and tools (riparian prioritization, drainage area calculator) developed and endorsed by the EBTJV.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-md-pull-8 col-sm-6 col-sm-pull-6">
+          <img class="img-responsive" src="img/module-ebtjv.jpg" alt="">
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-8 col-md-push-4 col-sm-6 col-sm-push-6">
+          <div class="lead">
+            <h3><a href="http://valuesmapping.ecosheds.org/">Landscape Values Mapping Survey</a></h3>
+            <p class="description">
+              The Landscape Values Mapping Survey (VMS) is an online survey designed to understand the values associated with headwater stream ecosystems across the northeastern US to help identify collaborative management strategies.
+            </p>
+            <p><a href="http://valuesmapping.ecosheds.org/">http://valuesmapping.ecosheds.org/</a></p>
+          </div>
+        </div>
+        <div class="col-md-4 col-md-pull-8 col-sm-6 col-sm-pull-6">
+          <img class="img-responsive" src="img/module-values-mapping.jpg" alt="">
+        </div>
+      </div>
     </div>
-    <!-- /.content-section-a -->
+  </div>
 
-    <a  name="funding"></a>
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-heading">Funding Sources</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center funding-section">
-                    <a href="https://necsc.umass.edu/"><img src="img/logo-necsc.png"></a>
-                    <a href="http://northatlanticlcc.org/"><img src="img/logo-nalcc.jpg"></a>
-                    <a href="http://www.usgs.gov"><img src="img/logo-usgs.png"></a>
-                    <a href="http://www.doi.gov"><img src="img/logo-doi.png"></a>
-                    <a href="http://www.usgs.gov/hurricane/sandy/#overview.html"><img src="img/logo-sandy.png"></a>
-                </div>
-            </div>
-                <!-- <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Funding Sources</h2>
-                    <p class="lead">
-                        <ul>
-                            <li><a href="//ice.ecosheds.org">Interactive Catchment Explorer</a></li>
-                            <li></li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="bower_components/landing-page/img/dog.png" alt="">
-                </div> -->
-
+  <a  name="team"></a>
+  <div class="content-section-a">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"><h2 class="section-heading">Project Team</h2></div>
+        <div class="col-md-8">
+          <div class="lead">
+            <ul class="list-unstyled" style="margin-top:20px">
+              <li><a href="http://www.lsc.usgs.gov/?q=cafb-ben-letcher" target="_blank"><strong>Dr. Ben Letcher</strong></a>: project manager</li>
+              <li><a href="http://walkerjeff.com" target="_blank"><strong>Dr. Jeffrey D. Walker</strong></a>: lead application developer</li>
+              <li><a href="http://www.hodgewatres.matthewhodge.net/" target="_blank"><strong>Matt Hodge</strong></a>: application developer</li>
+              <li><strong>Chris Jennison</strong>: application developer</li>
+              <li><strong>Dr. Jason Coombs</strong>: application and model developer</li>
+              <li><strong>Dr. Dan Hocking, Dr. Yoichiro Kanno, Dr. Evan Childress</strong>: model developers</li>
+              <li><strong>Kyle O'Neil</strong>: database support</li>
+              <li><strong>Ana Rosner</strong>: model developer and database support</li>
+              <li><strong>Dr. Evan Grant, Dr. Rachel Katz</strong>: decision support researchers</li>
+            </ul>
+          </div>
         </div>
-        <!-- /.container -->
-
+      </div>
     </div>
-    <!-- /.content-section-b -->
+  </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- <ul class="list-inline">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">Services</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul> -->
-                    <p class="copyright text-muted small">Copyright &copy; 2015 SHEDS Development Team. All Rights Reserved.</p>
-                    <p class="copyright text-muted small"><strong>Disclaimer:</strong> This web site (SHEDS) has not yet been approved by the U.S. Geological Survey (USGS). As such, it does not represent any official USGS finding or policy.</p>
-                </div>
-            </div>
+  <a  name="funding"></a>
+  <div class="content-section-b">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="section-heading">Funding Sources</h2>
         </div>
-    </footer>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text-center funding-section">
+          <a href="https://necsc.umass.edu/"><img src="img/logo-necsc.png"></a>
+          <a href="http://northatlanticlcc.org/"><img src="img/logo-nalcc.jpg"></a>
+          <a href="http://www.usgs.gov"><img src="img/logo-usgs.png"></a>
+          <a href="http://www.doi.gov"><img src="img/logo-doi.png"></a>
+          <a href="http://www.usgs.gov/hurricane/sandy/#overview.html"><img src="img/logo-sandy.png"></a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- jQuery -->
-    <script src="/bower_components/landing-page/js/jquery.js"></script>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="copyright text-muted small">Copyright &copy; 2015 SHEDS Development Team</p>
+          <p class="copyright text-muted small"><strong>Disclaimer:</strong> This web site (SHEDS) has not yet been approved by the U.S. Geological Survey (USGS). As such, it does not represent any official USGS finding or policy.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/bower_components/landing-page/js/bootstrap.min.js"></script>
+  <script src="/bower_components/landing-page/js/jquery.js"></script>
+  <script src="/bower_components/landing-page/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
