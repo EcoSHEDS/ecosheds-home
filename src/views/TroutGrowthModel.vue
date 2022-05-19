@@ -22,10 +22,11 @@
             <v-col cols="10" xl="8" class="text-h6 font-weight-regular">
               <v-card>
                 <v-card-title primary-title>
-                  <h2 class="text-h4">Trout Growth Model</h2>
+                  <div class="text-h4">Trout Growth Model</div>
                 </v-card-title>
 
                 <v-card-text class="body-1 black--text">
+                  <div class="text-subtitle-2 mb-4">by Ben Letcher</div>
                   <div id="observablehq-e5ebfad5" class="observablehq-container">
                     <div class="observablehq-introText" style="max-width:800px"></div>
                     <v-divider class="my-4"></v-divider>
