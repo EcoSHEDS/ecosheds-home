@@ -107,6 +107,11 @@
             <v-col cols="12" lg="6" xl="5" offset-xl="2">
               <h2 class="text-h4 mb-4">Recent Updates</h2>
 
+              <div class="body-1 font-weight-bold text-overline">Aug 1, 2022</div>
+              <p class="text-h6 font-weight-regular">
+                New version of the <a href="https://ecosheds.github.io/northeast-bto-model/">Northeast Brook Trout Occupancy Model</a> released along with new documentation. Also, brand new documentation for the <a href="https://ecosheds.github.io/necd/">Northeast Catchment Delineation</a>.
+              </p>
+
               <div class="body-1 font-weight-bold text-overline">March 1, 2022</div>
               <p class="text-h6 font-weight-regular">
                 Welcome to our new website! The EcoSHEDS homepage has been migrated from <a href="https://ecosheds.org">https://ecosheds.org</a> to <a href="https://usgs.gov/apps/ecosheds">https://usgs.gov/apps/ecosheds</a>.
@@ -264,14 +269,14 @@
                 <v-col cols="12" xl="6">
                   <v-row>
                     <v-col cols="12" sm="4">
-                      <a href="http://ecosheds.org/models/brook-trout-occupancy/latest/">
-                        <v-img src="@/assets/img/projects/northeast-brook-trout-occupancy-model.png" alt="Northeast Brook Trout Occupancy Model Figure"></v-img>
+                      <a href="https://ecosheds.github.io/northeast-bto-model/">
+                        <v-img src="@/assets/img/projects/northeast-brook-trout-occupancy-model.png" alt="Northeast Brook Trout Occupancy Model Figure" contain></v-img>
                       </a>
                     </v-col>
                     <v-col cols="12" sm="8">
-                      <div class="text-h6 font-weight-bold"><a href="http://ecosheds.org/models/brook-trout-occupancy/latest/">Northeast Brook Trout Occupancy Model</a></div>
+                      <div class="text-h6 font-weight-bold"><a href="https://ecosheds.github.io/northeast-bto-model/">Northeast Brook Trout Occupancy Model</a></div>
                       <p>
-                        A logistic mixed-effects model based on landscape, land-use, and climate variables for predicting the probability of Brook Trout occupancy at the catchment level.
+                        A logistic mixed-effects model for predicting the probability of Brook Trout occupancy under historical and potential climate change scenarios based on estimated stream temperatures.
                       </p>
                     </v-col>
                   </v-row>
@@ -279,12 +284,12 @@
                 <v-col cols="12" xl="6">
                   <v-row>
                     <v-col cols="12" sm="4">
-                      <a href="http://conte-ecology.github.io/shedsGisData">
-                        <v-img src="@/assets/img/projects/northeast-catchment-delineation.png" alt="Northeast Catchment Delineation Figure"></v-img>
+                      <a href="https://ecosheds.github.io/necd/">
+                        <v-img src="@/assets/img/projects/northeast-catchment-delineation.png" alt="Northeast Catchment Delineation Figure" contain></v-img>
                       </a>
                     </v-col>
                     <v-col cols="12" sm="8">
-                      <div class="text-h6 font-weight-bold"><a href="http://conte-ecology.github.io/shedsGisData">Northeast Catchment Delineation</a></div>
+                      <div class="text-h6 font-weight-bold"><a href="https://ecosheds.github.io/necd/">Northeast Catchment Delineation</a></div>
                       <p>
                         High-resolution catchment delineation spanning the northeast U.S. with pre-computed catchment characteristics include drainage area, impoundments, land use composition and other landscape variables.
                       </p>
