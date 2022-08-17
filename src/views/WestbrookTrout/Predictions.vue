@@ -7,7 +7,7 @@
       style="margin-top:68px"
     >
       <v-toolbar-title class="text-h5">
-        Westbrook Trout / Predictions
+        West Brook Trout Growth Model Predictions
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
@@ -22,11 +22,11 @@
             <v-col cols="12" sm="10" md="8" xl="6" class="text-h6 font-weight-regular">
               <v-card class="elevation-0">
                 <v-card-title primary-title>
-                  <div class="text-h4">Westbrook River Trout Growth Model Predictions</div>
+                  <div class="text-h4">West Brook Trout Growth Model Predictions</div>
                 </v-card-title>
 
                 <v-card-text class="body-1 black--text">
-                  <div class="text-subtitle-2 mb-4">by Ben Letcher</div>
+                  <div class="text-subtitle-2 mb-4">by <a href="https://www.usgs.gov/staff-profiles/benjamin-h-letcher">Ben Letcher</a>, Eastern Ecological Science Center</div>
                   <div id="observablehq-101e6c76" class="observablehq-container">
                     <div class="observablehq-introText" style="max-width:800px"></div>
                     <v-divider class="my-4"></v-divider>
