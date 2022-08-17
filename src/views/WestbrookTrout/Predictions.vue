@@ -7,7 +7,7 @@
       style="margin-top:68px"
     >
       <v-toolbar-title class="text-h5">
-        West Brook Trout Growth Model Predictions
+        West Brook Trout / Predictions
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
