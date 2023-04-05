@@ -9,7 +9,7 @@
       </v-card-title>
       <v-divider></v-divider>
       <v-img
-        :src="require('@/assets/img/' + image)"
+        :src="image"
         :max-height="600"
         position="top left"
         :aspect-ratio="1.77"

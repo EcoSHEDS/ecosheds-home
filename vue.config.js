@@ -1,6 +1,5 @@
-module.exports = {
-  transpileDependencies: [
-    'vuetify'
-  ],
+const { defineConfig } = require('@vue/cli-service')
+module.exports = defineConfig({
+  transpileDependencies: true,
   publicPath: process.env.BASE_URL || '/'
-}
+})
