@@ -514,7 +514,7 @@
               <v-row class="align-center">
                 <v-col cols="11">
                   <div>
-                    To get in touch with the EcoSHEDS team, please email us at <a class="blue-grey--text text--lighten-4" href="mailto:gs-naar-lsc-ecosheds@doimspp.onmicrosoft.com">gs-naar-lsc-ecosheds@doimspp.onmicrosoft.com</a>.
+                    To get in touch with the EcoSHEDS team, please email us at <a class="blue-grey--text text--lighten-4" href="mailto:ecosheds@usgs.gov">ecosheds@usgs.gov</a>.
                   </div>
                 </v-col>
               </v-row>
