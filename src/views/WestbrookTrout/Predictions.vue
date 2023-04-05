@@ -34,11 +34,14 @@
                     <div class="observablehq-input2"></div>
                     <div class="observablehq-input3"></div>
                     <v-divider class="my-4"></v-divider>
+                    <div class="observablehq-swatchesSpp"></div>
                     <div class="observablehq-charts"></div>
                     <div class="observablehq-chartsAccum"></div>
                     <v-divider class="my-4"></v-divider>
                     <div class="observablehq-paramText"></div>
                     <div class="observablehq-params"></div>
+                    <v-divider class="my-4"></v-divider>
+                    <div class="observablehq-usgsText"></div>
                     <div class="hidden observablehq-shadowPush"></div>
                     <div class="hidden observablehq-shadow"></div>
                     <div class="hidden observablehq-shadowCount"></div>
