@@ -107,6 +107,11 @@
             <v-col cols="12" lg="6" xl="5" offset-xl="2">
               <h2 class="text-h4 mb-4">Recent Updates</h2>
 
+              <div class="body-1 font-weight-bold text-overline">Apr 13, 2023</div>
+              <p class="text-h6 font-weight-regular">
+                New video describing the motivation and goals behind the <a href="https://www.usgs.gov/apps/ecosheds/fpe/">Flow Photo Explorer</a> is now available on the <a href="https://www.usgs.gov/apps/ecosheds/fpe/">FPE homepage</a>.
+              </p>
+
               <div class="body-1 font-weight-bold text-overline">Aug 1, 2022</div>
               <p class="text-h6 font-weight-regular">
                 New version of the <a href="https://ecosheds.github.io/northeast-bto-model/">Northeast Brook Trout Occupancy Model</a> released along with new documentation. Also, brand new documentation for the <a href="https://ecosheds.github.io/necd/">Northeast Catchment Delineation</a>.
