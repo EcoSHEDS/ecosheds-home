@@ -107,9 +107,9 @@
             <v-col cols="12" lg="6" xl="5" offset-xl="2">
               <h2 class="text-h4 mb-4">Recent Updates</h2>
 
-              <div class="body-1 font-weight-bold text-overline">Apr 13, 2023</div>
+              <div class="body-1 font-weight-bold text-overline">Apr 28, 2023</div>
               <p class="text-h6 font-weight-regular">
-                New video describing the motivation and goals behind the <a href="https://www.usgs.gov/apps/ecosheds/fpe/">Flow Photo Explorer</a> is now available on the <a href="https://www.usgs.gov/apps/ecosheds/fpe/">FPE homepage</a>.
+                The <a href="https://www.usgs.gov/apps/ecosheds/fpe/">Flow Photo Explorer</a> now includes 1) automated Personal Identifying Information (PII) screening of all photos, 2) a new video about the project produced by the <a href="https://www.usgs.gov/centers/md-de-dc-water">USGS MD-DE-DC Water Science Center</a>, 3) instructions for uploading photos in the FPE User Guide, 4) new station categories for waterbody type and status (active, discontinued), and 5) a redesigned homepage.
               </p>
 
               <div class="body-1 font-weight-bold text-overline">Aug 1, 2022</div>
@@ -117,10 +117,22 @@
                 New version of the <a href="https://ecosheds.github.io/northeast-bto-model/">Northeast Brook Trout Occupancy Model</a> released along with new documentation. Also, brand new documentation for the <a href="https://ecosheds.github.io/necd/">Northeast Catchment Delineation</a>.
               </p>
 
-              <div class="body-1 font-weight-bold text-overline">March 1, 2022</div>
-              <p class="text-h6 font-weight-regular">
-                Welcome to our new website! The EcoSHEDS homepage has been migrated from <a href="https://ecosheds.org">https://ecosheds.org</a> to <a href="https://usgs.gov/apps/ecosheds">https://usgs.gov/apps/ecosheds</a>.
-              </p>
+              <div v-if="showMoreNews">
+                <div class="body-1 font-weight-bold text-overline">March 1, 2022</div>
+                <p class="text-h6 font-weight-regular">
+                  Welcome to our new website! The EcoSHEDS homepage has been migrated from <a href="https://ecosheds.org">https://ecosheds.org</a> to <a href="https://usgs.gov/apps/ecosheds">https://usgs.gov/apps/ecosheds</a>.
+                </p>
+              </div>
+
+              <div class="text-right">
+                <v-btn text small @click="showMoreNews = !showMoreNews">
+                  <span v-if="!showMoreNews">Show More</span>
+                  <span v-else>Show Less</span>
+                  <v-icon small right v-if="!showMoreNews">mdi-chevron-down</v-icon>
+                  <v-icon small right v-else>mdi-chevron-up</v-icon>
+                </v-btn>
+              </div>
+
             </v-col>
           </v-row>
         </v-container>
@@ -139,6 +151,16 @@
                 url="https://www.usgs.gov/apps/ecosheds/fpe/"
               >
                 An integrated database and machine learning platform to estimate streamflow from timelapse imagery. The goal is to develop new approaches for monitoring hydrologic conditions in headwater streams where flow data are historically sparse or non-existent.
+              </ProjectCard>
+            </v-col>
+            <v-col cols="12" md="12" lg="6" xl="4" :class="[$vuetify.breakpoint.mobile ? 'px-2' : 'px-4', 'py-4']">
+              <ProjectCard
+                title="AKTEMP"
+                subtitle="Water Temperature Database for State of Alaska"
+                image="img/projects/aktemp.jpg"
+                url="https://aktemp.uaa.alaska.edu"
+              >
+                A water temperature database for exploring, uploading, managing, and downloading stream and lake temperature data across Alaska. Developed in collaboration with the <a href="https://accs.uaa.alaska.edu/">Alaska Center for Conservation Science</a> at the Univ. of Alaska, Anchorage.
               </ProjectCard>
             </v-col>
             <v-col cols="12" md="12" lg="6" xl="4" :class="[$vuetify.breakpoint.mobile ? 'px-2' : 'px-4', 'py-4']">
@@ -537,6 +559,11 @@ export default {
   name: 'Home',
   components: {
     ProjectCard
+  },
+  data () {
+    return {
+      showMoreNews: false
+    }
   }
 }
 </script>

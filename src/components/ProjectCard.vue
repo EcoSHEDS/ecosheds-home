@@ -2,19 +2,23 @@
   <v-hover v-slot="{ hover }">
     <v-card :elevation="hover ? 16 : 4" class="fill-height d-flex flex-column">
       <v-card-title primary-title color="black">
-        <div >
-          <h3 class="headline font-weight-regular mb-0" style="word-break:break-word">{{ title }}</h3>
+        <div>
+          <a :href="url" style="color:black;text-decoration:none">
+            <h3 class="headline font-weight-regular mb-0" style="word-break:break-word">{{ title }}</h3>
+          </a>
           <h4 class="subtitle-1 font-weight-regular text--secondary mb-0" style="word-break: break-word" v-if="subtitle">{{ subtitle }}</h4>
         </div>
       </v-card-title>
       <v-divider></v-divider>
-      <v-img
-        :src="image"
-        :max-height="600"
-        position="top left"
-        :aspect-ratio="1.77"
-        eager
-      ></v-img>
+      <a :href="url">
+        <v-img
+          :src="image"
+          :max-height="600"
+          position="top left"
+          :aspect-ratio="1.9"
+          eager
+        ></v-img>
+      </a>
       <v-divider></v-divider>
       <v-card-text class="body-1 black--text">
         <slot></slot>
