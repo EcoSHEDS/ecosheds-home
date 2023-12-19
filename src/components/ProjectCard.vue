@@ -43,6 +43,7 @@
           large
           color="primary"
           :href="url"
+          :disabled="offline"
         >
           Launch
           <v-icon right small>mdi-chevron-right</v-icon>
@@ -60,7 +61,8 @@ export default {
     subtitle: String,
     image: String,
     url: String,
-    external: Boolean
+    external: Boolean,
+    offline: Boolean
   }
 }
 </script>

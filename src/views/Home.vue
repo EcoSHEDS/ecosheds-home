@@ -200,6 +200,7 @@
                 subtitle="Vulnerability Assessment of Native Trout to Climate Change"
                 image="img/projects/ice-cce.png"
                 url="http://ice.ecosheds.org/cce"
+                offline
                 external
               >
                 An interactive data visualization tool for exploring the relative vulnerability of native trout populations to climate change, demographics, hybridization, and habitat loss. Developed in collaboration with the USGS Northern Rocky Mountain Science Center.
