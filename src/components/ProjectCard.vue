@@ -24,6 +24,18 @@
         <slot></slot>
       </v-card-text>
       <v-spacer></v-spacer>
+      <div class="my-0 px-4 py-2" style="background: #EEE">
+        <div class="d-flex align-center">
+          <div>
+            <a class="black--text" :href="url">{{ url }}</a>
+            <v-icon v-if="external" right small class="align-self-center">mdi-open-in-new</v-icon>
+          </div>
+          <v-spacer></v-spacer>
+          <div v-if="external" class="text-caption" style="color:grey;font-weight:bold">
+            External Link
+          </div>
+        </div>
+      </div>
       <v-divider></v-divider>
       <v-card-actions class="pa-4 justify-space-around">
         <v-btn
@@ -32,7 +44,8 @@
           color="primary"
           :href="url"
         >
-          Launch <v-icon right small>mdi-chevron-right</v-icon>
+          Launch
+          <v-icon right small>mdi-chevron-right</v-icon>
         </v-btn>
       </v-card-actions>
     </v-card>
@@ -46,7 +59,8 @@ export default {
     title: String,
     subtitle: String,
     image: String,
-    url: String
+    url: String,
+    external: Boolean
   }
 }
 </script>

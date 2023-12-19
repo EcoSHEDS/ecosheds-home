@@ -114,7 +114,7 @@
 
               <div class="body-1 font-weight-bold text-overline">Aug 1, 2022</div>
               <p class="text-h6 font-weight-regular">
-                New version of the <a href="https://ecosheds.github.io/northeast-bto-model/">Northeast Brook Trout Occupancy Model</a> released along with new documentation. Also, brand new documentation for the <a href="https://ecosheds.github.io/necd/">Northeast Catchment Delineation</a>.
+                New version of the <a href="https://ecosheds.github.io/northeast-bto-model/">Northeast Brook Trout Occupancy Model</a><v-icon small class="align-self-center">mdi-open-in-new</v-icon> released along with new documentation. Also, brand new documentation for the <a href="https://ecosheds.github.io/necd/">Northeast Catchment Delineation</a><v-icon small class="align-self-center">mdi-open-in-new</v-icon>.
               </p>
 
               <div v-if="showMoreNews">
@@ -155,16 +155,6 @@
             </v-col>
             <v-col cols="12" md="12" lg="6" xl="4" :class="[$vuetify.breakpoint.mobile ? 'px-2' : 'px-4', 'py-4']">
               <ProjectCard
-                title="AKTEMP"
-                subtitle="Water Temperature Database for State of Alaska"
-                image="img/projects/aktemp.jpg"
-                url="https://aktemp.uaa.alaska.edu"
-              >
-                A water temperature database for exploring, uploading, managing, and downloading stream and lake temperature data across Alaska. Developed in collaboration with the <a href="https://accs.uaa.alaska.edu/">Alaska Center for Conservation Science</a> at the Univ. of Alaska, Anchorage.
-              </ProjectCard>
-            </v-col>
-            <v-col cols="12" md="12" lg="6" xl="4" :class="[$vuetify.breakpoint.mobile ? 'px-2' : 'px-4', 'py-4']">
-              <ProjectCard
                 title="Northeast Interactive Catchment Explorer"
                 subtitle="Stream Temp. and Brook Trout Occupancy Data Visualization Tool"
                 image="img/projects/ice-northeast.png"
@@ -195,10 +185,22 @@
             </v-col>
             <v-col cols="12" md="12" lg="6" xl="4" :class="[$vuetify.breakpoint.mobile ? 'px-2' : 'px-4', 'py-4']">
               <ProjectCard
+                title="AKTEMP"
+                subtitle="Water Temperature Database for State of Alaska"
+                image="img/projects/aktemp.jpg"
+                url="https://aktemp.uaa.alaska.edu"
+                external
+              >
+                A water temperature database for exploring, uploading, managing, and downloading stream and lake temperature data across Alaska. Developed in collaboration with the <a href="https://accs.uaa.alaska.edu/">Alaska Center for Conservation Science</a> at the Univ. of Alaska, Anchorage.
+              </ProjectCard>
+            </v-col>
+            <v-col cols="12" md="12" lg="6" xl="4" :class="[$vuetify.breakpoint.mobile ? 'px-2' : 'px-4', 'py-4']">
+              <ProjectCard
                 title="Native Trout Vulnerability in the Crown of the Continent Ecosystem"
                 subtitle="Vulnerability Assessment of Native Trout to Climate Change"
                 image="img/projects/ice-cce.png"
                 url="http://ice.ecosheds.org/cce"
+                external
               >
                 An interactive data visualization tool for exploring the relative vulnerability of native trout populations to climate change, demographics, hybridization, and habitat loss. Developed in collaboration with the USGS Northern Rocky Mountain Science Center.
               </ProjectCard>
@@ -210,6 +212,7 @@
                 image="img/projects/sce.png"
                 launchUrl="https://sce.ecosheds.org/"
                 url="http://sce.ecosheds.org"
+                external
               >
                 A data visualization and decision support tool to assist with locating and prioritizing stream crossings for restoration in the Deerfield River watershed.
               </ProjectCard>
@@ -220,6 +223,7 @@
                 subtitle="Three Interactive Data Visualizations of PIT Tag Data"
                 image="img/projects/pitdata.png"
                 url="https://pitdata.ecosheds.org/"
+                external
               >
                 A series of interactive data visualizations for exploring fish tagging (PIT) data for trout and salmon in two small New England watersheds.
               </ProjectCard>
@@ -230,6 +234,7 @@
                 subtitle="Culvert Prioritization Tool for UMass Critical Linkages Project"
                 image="img/projects/aquatic-connectivity-tool.png"
                 url="https://ecosheds.org/aq-connectivity-tool/"
+                external
               >
                 An interactive modeling tool for evaluating scenarios involving stream crossing replacements and/or dam removals based on aquatic connectivity and ecological restoration potential. Developed in collaboration with <a href="https://umassdsl.org/">UMass Designing Sustainable Landscapes</a>.
               </ProjectCard>
@@ -240,6 +245,7 @@
                 subtitle="Interactive Data Visualization for Exploring Timeseries Patterns"
                 image="img/projects/tse.png"
                 url="http://tse.ecosheds.org/"
+                external
               >
                 A simple interactive data visualization tool for exploring patterns in time series data such as precipitation, rainfall, and streamflow.
               </ProjectCard>
@@ -271,7 +277,7 @@
                       </a>
                     </v-col>
                     <v-col cols="12" sm="8">
-                      <div class="text-h6 font-weight-bold"><a href="http://db.ecosheds.org/">Stream Temperature Database</a></div>
+                      <div class="text-h6 font-weight-bold"><a href="http://db.ecosheds.org/">Stream Temperature Database</a><v-icon right small class="align-self-center">mdi-open-in-new</v-icon></div>
                       <p>
                         A crowd-sourced, regional database for discovering and downloading continuous stream temperature data across the northeast. Registered users can upload, manage, and perform QAQC reviews of their data.
                       </p>
@@ -286,7 +292,7 @@
                       </a>
                     </v-col>
                     <v-col cols="12" sm="8">
-                      <div class="text-h6 font-weight-bold"><a href="http://ecosheds.org/models/stream-temperature/latest/">Northeast Stream Temperature Model</a></div>
+                      <div class="text-h6 font-weight-bold"><a href="http://ecosheds.org/models/stream-temperature/latest/">Northeast Stream Temperature Model</a><v-icon right small class="align-self-center">mdi-open-in-new</v-icon></div>
                       <p>
                         A hierarchical, Bayesian model that predicts daily mean stream temperature based on catchment characteristics, precipitation, and air temperature.
                       </p>
@@ -301,7 +307,7 @@
                       </a>
                     </v-col>
                     <v-col cols="12" sm="8">
-                      <div class="text-h6 font-weight-bold"><a href="https://ecosheds.github.io/northeast-bto-model/">Northeast Brook Trout Occupancy Model</a></div>
+                      <div class="text-h6 font-weight-bold"><a href="https://ecosheds.github.io/northeast-bto-model/">Northeast Brook Trout Occupancy Model</a><v-icon right small class="align-self-center">mdi-open-in-new</v-icon></div>
                       <p>
                         A logistic mixed-effects model for predicting the probability of Brook Trout occupancy under historical and potential climate change scenarios based on estimated stream temperatures.
                       </p>
@@ -316,7 +322,7 @@
                       </a>
                     </v-col>
                     <v-col cols="12" sm="8">
-                      <div class="text-h6 font-weight-bold"><a href="https://ecosheds.github.io/necd/">Northeast Catchment Delineation</a></div>
+                      <div class="text-h6 font-weight-bold"><a href="https://ecosheds.github.io/necd/">Northeast Catchment Delineation</a><v-icon right small class="align-self-center">mdi-open-in-new</v-icon></div>
                       <p>
                         High-resolution catchment delineation spanning the northeast U.S. with pre-computed catchment characteristics include drainage area, impoundments, land use composition and other landscape variables.
                       </p>
@@ -352,7 +358,7 @@
                       </a>
                     </v-col>
                     <v-col cols="12" sm="8">
-                      <div class="text-h6 font-weight-bold"><a href="http://fpe.ecosheds.org/">Flow Photo Explorer Prototype</a></div>
+                      <div class="text-h6 font-weight-bold"><a href="http://fpe.ecosheds.org/">Flow Photo Explorer Prototype</a><v-icon right small class="align-self-center">mdi-open-in-new</v-icon></div>
                       <p>
                         A simple explorer for viewing daily images of a small stream in western MA. The goal is to understand how the stream changes over time both visually and quantitatively by coupling images to plots of stream flow, temperature, and rainfall.
                       </p>
@@ -367,7 +373,7 @@
                       </a>
                     </v-col>
                     <v-col cols="12" sm="8">
-                      <div class="text-h6 font-weight-bold"><a href="http://ice.ecosheds.org/deerfield/">ICE - Deerfield River</a></div>
+                      <div class="text-h6 font-weight-bold"><a href="http://ice.ecosheds.org/deerfield/">ICE - Deerfield River</a><v-icon right small class="align-self-center">mdi-open-in-new</v-icon></div>
                       <p>
                         Adaptation of ICE for exploring land use characteristics, dams, culverts, precipitation, and the LCC development score for catchments across the Deerfield River watershed.
                       </p>
@@ -382,7 +388,7 @@
                       </a>
                     </v-col>
                     <v-col cols="12" sm="8">
-                      <div class="text-h6 font-weight-bold"><a href="http://ice.ecosheds.org/ebtjv/">ICE - Eastern Brook Trout Joint Venture</a></div>
+                      <div class="text-h6 font-weight-bold"><a href="http://ice.ecosheds.org/ebtjv/">ICE - Eastern Brook Trout Joint Venture</a><v-icon right small class="align-self-center">mdi-open-in-new</v-icon></div>
                       <p>
                         Adaptation of ICE for the Eastern Brook Trout Joint Venture (EBTJV) for exploring catchment characteristics and climate conditions across the native range for eastern brook trout.
                       </p>
@@ -397,7 +403,7 @@
                       </a>
                     </v-col>
                     <v-col cols="12" sm="8">
-                      <div class="text-h6 font-weight-bold"><a href="http://ice.ecosheds.org/champ/">ICE - Columbia River Habitat Monitoring Program</a></div>
+                      <div class="text-h6 font-weight-bold"><a href="http://ice.ecosheds.org/champ/">ICE - Columbia River Habitat Monitoring Program</a><v-icon right small class="align-self-center">mdi-open-in-new</v-icon></div>
                       <p>
                         Adaptation of ICE for the Columbia River Habitat Monitoring Program (CHaMP) for exploring catchment characteristics, habitat conditions, and stream temperature for Steelhead and Chinook salmon in the Columbia River watershed.
                       </p>
@@ -442,7 +448,7 @@
                       <v-img src="img/team/jwalker.jpg" style="border-radius:50%;aspect-ratio:1" alt="Photo of Jeff Walker"></v-img>
                     </v-col>
                     <v-col cols="12" sm="10">
-                      <div class="text-h6 font-weight-bold">Jeff Walker, Walker Environmental Research (Contractor)</div>
+                      <div class="text-h6 font-weight-bold">Jeff Walker, USGS Contractor (Walker Environmental Research)</div>
                       <p>
                         Jeff is a water resources engineer and environmental data scientist who specializes in developing web-based databases, models, and data visualization tools. His mission is to find new ways of using interactive data visualizations to make environmental data and models more accessible.
                       </p>
@@ -540,7 +546,7 @@
             <v-col cols="12" lg="9" class="body-1">
               <v-row class="align-center">
                 <v-col cols="11">
-                  <div>
+                  <div class="mt-2">
                     To get in touch with the EcoSHEDS team, please email us at <a class="blue-grey--text text--lighten-4" href="mailto:ecosheds@usgs.gov">ecosheds@usgs.gov</a>.
                   </div>
                 </v-col>
