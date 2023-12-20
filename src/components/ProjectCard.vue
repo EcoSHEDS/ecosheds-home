@@ -45,8 +45,8 @@
           :href="url"
           :disabled="offline"
         >
-          Launch
-          <v-icon right small>mdi-chevron-right</v-icon>
+          <span v-if="offline">Offline</span>
+          <span v-else>Launch <v-icon right small>mdi-chevron-right</v-icon></span>
         </v-btn>
       </v-card-actions>
     </v-card>

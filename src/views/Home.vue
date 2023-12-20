@@ -196,14 +196,22 @@
             </v-col>
             <v-col cols="12" md="12" lg="6" xl="4" :class="[$vuetify.breakpoint.mobile ? 'px-2' : 'px-4', 'py-4']">
               <ProjectCard
-                title="Native Trout Vulnerability in the Crown of the Continent Ecosystem"
-                subtitle="Vulnerability Assessment of Native Trout to Climate Change"
-                image="img/projects/ice-cce.png"
-                url="http://ice.ecosheds.org/cce"
-                offline
-                external
+                title="Fish Tagging Data Visualizations"
+                subtitle="Three Interactive Data Visualizations of PIT Tag Data"
+                image="img/projects/pitdata.png"
+                url="https://www.usgs.gov/apps/ecosheds/pitdata/"
               >
-                An interactive data visualization tool for exploring the relative vulnerability of native trout populations to climate change, demographics, hybridization, and habitat loss. Developed in collaboration with the USGS Northern Rocky Mountain Science Center.
+                A series of interactive data visualizations for exploring fish tagging (PIT) data for trout and salmon in two small New England watersheds.
+              </ProjectCard>
+            </v-col>
+            <v-col cols="12" md="12" lg="6" xl="4" :class="[$vuetify.breakpoint.mobile ? 'px-2' : 'px-4', 'py-4']">
+              <ProjectCard
+                title="Timeseries Explorer"
+                subtitle="Interactive Data Visualization for Exploring Timeseries Patterns"
+                image="img/projects/tse.png"
+                url="https://www.usgs.gov/apps/ecosheds/tse/"
+              >
+                A simple interactive data visualization tool for exploring patterns in time series data such as precipitation, rainfall, and streamflow.
               </ProjectCard>
             </v-col>
             <v-col cols="12" md="12" lg="6" xl="4" :class="[$vuetify.breakpoint.mobile ? 'px-2' : 'px-4', 'py-4']">
@@ -220,13 +228,14 @@
             </v-col>
             <v-col cols="12" md="12" lg="6" xl="4" :class="[$vuetify.breakpoint.mobile ? 'px-2' : 'px-4', 'py-4']">
               <ProjectCard
-                title="Fish Tagging Data Visualizations"
-                subtitle="Three Interactive Data Visualizations of PIT Tag Data"
-                image="img/projects/pitdata.png"
-                url="https://pitdata.ecosheds.org/"
+                title="Native Trout Vulnerability in the Crown of the Continent Ecosystem"
+                subtitle="Vulnerability Assessment of Native Trout to Climate Change"
+                image="img/projects/ice-cce.png"
+                url="http://ice.ecosheds.org/cce"
+                offline
                 external
               >
-                A series of interactive data visualizations for exploring fish tagging (PIT) data for trout and salmon in two small New England watersheds.
+                An interactive data visualization tool for exploring the relative vulnerability of native trout populations to climate change, demographics, hybridization, and habitat loss. Developed in collaboration with the USGS Northern Rocky Mountain Science Center.
               </ProjectCard>
             </v-col>
             <v-col cols="12" md="12" lg="6" xl="4" :class="[$vuetify.breakpoint.mobile ? 'px-2' : 'px-4', 'py-4']">
@@ -236,19 +245,9 @@
                 image="img/projects/aquatic-connectivity-tool.png"
                 url="https://ecosheds.org/aq-connectivity-tool/"
                 external
+                offline
               >
                 An interactive modeling tool for evaluating scenarios involving stream crossing replacements and/or dam removals based on aquatic connectivity and ecological restoration potential. Developed in collaboration with <a href="https://umassdsl.org/">UMass Designing Sustainable Landscapes</a>.
-              </ProjectCard>
-            </v-col>
-            <v-col cols="12" md="12" lg="6" xl="4" :class="[$vuetify.breakpoint.mobile ? 'px-2' : 'px-4', 'py-4']">
-              <ProjectCard
-                title="Timeseries Explorer"
-                subtitle="Interactive Data Visualization for Exploring Timeseries Patterns"
-                image="img/projects/tse.png"
-                url="http://tse.ecosheds.org/"
-                external
-              >
-                A simple interactive data visualization tool for exploring patterns in time series data such as precipitation, rainfall, and streamflow.
               </ProjectCard>
             </v-col>
           </v-row>
@@ -288,12 +287,12 @@
                 <v-col cols="12" xl="6">
                   <v-row>
                     <v-col cols="12" sm="4">
-                      <a href="http://ecosheds.org/models/stream-temperature/latest/">
+                      <a href="https://ecosheds.github.io/northeast-temp-model/">
                         <v-img src="img/projects/northeast-stream-temperature-model.png" alt="Northeast Stream Temperature Model Figure"></v-img>
                       </a>
                     </v-col>
                     <v-col cols="12" sm="8">
-                      <div class="text-h6 font-weight-bold"><a href="http://ecosheds.org/models/stream-temperature/latest/">Northeast Stream Temperature Model</a><v-icon right small class="align-self-center">mdi-open-in-new</v-icon></div>
+                      <div class="text-h6 font-weight-bold"><a href="https://ecosheds.github.io/northeast-temp-model/">Northeast Stream Temperature Model</a><v-icon right small class="align-self-center">mdi-open-in-new</v-icon></div>
                       <p>
                         A hierarchical, Bayesian model that predicts daily mean stream temperature based on catchment characteristics, precipitation, and air temperature.
                       </p>
