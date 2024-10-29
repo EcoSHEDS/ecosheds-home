@@ -107,17 +107,22 @@
             <v-col cols="12" lg="6" xl="5" offset-xl="2">
               <h2 class="text-h4 mb-4">Recent Updates</h2>
 
-              <div class="body-1 font-weight-bold text-overline">Apr 28, 2023</div>
+              <div class="body-1 font-weight-bold text-overline">October 10, 2024</div>
               <p class="text-h6 font-weight-regular">
-                The <a href="https://www.usgs.gov/apps/ecosheds/fpe/">Flow Photo Explorer</a> now includes 1) automated Personal Identifying Information (PII) screening of all photos, 2) a new video about the project produced by the <a href="https://www.usgs.gov/centers/md-de-dc-water">USGS MD-DE-DC Water Science Center</a>, 3) instructions for uploading photos in the FPE User Guide, 4) new station categories for waterbody type and status (active, discontinued), and 5) a redesigned homepage.
-              </p>
-
-              <div class="body-1 font-weight-bold text-overline">Aug 1, 2022</div>
-              <p class="text-h6 font-weight-regular">
-                New version of the <a href="https://ecosheds.github.io/northeast-bto-model/">Northeast Brook Trout Occupancy Model</a><v-icon small class="align-self-center">mdi-open-in-new</v-icon> released along with new documentation. Also, brand new documentation for the <a href="https://ecosheds.github.io/necd/">Northeast Catchment Delineation</a><v-icon small class="align-self-center">mdi-open-in-new</v-icon>.
+                The <a href="https://www.usgs.gov/apps/ecosheds/fpe/">Flow Photo Explorer</a> now provides model predictions at 39 stations in the northeast, mid-atlantic, and midwest regions. While most of these stations focus on streamflow predictions, three of them located on the Fox River in Wisconsin and managed by the USGS Upper Midwest Water Science Center provide predictions of harmful algal blooms (HABs). These predictions were generated using the same annotation process and deep learning model as the streamflow stations and demonstrate how FPE can be used to estimate parameters other than streamflow. More variables (e.g., lake/wetland water levels, snow depths) are currently being developed and will be added soon.
               </p>
 
               <div v-if="showMoreNews">
+                <div class="body-1 font-weight-bold text-overline">Apr 28, 2023</div>
+                <p class="text-h6 font-weight-regular">
+                  The <a href="https://www.usgs.gov/apps/ecosheds/fpe/">Flow Photo Explorer</a> now includes 1) automated Personal Identifying Information (PII) screening of all photos, 2) a new video about the project produced by the <a href="https://www.usgs.gov/centers/md-de-dc-water">USGS MD-DE-DC Water Science Center</a>, 3) instructions for uploading photos in the FPE User Guide, 4) new station categories for waterbody type and status (active, discontinued), and 5) a redesigned homepage.
+                </p>
+
+                <div class="body-1 font-weight-bold text-overline">Aug 1, 2022</div>
+                <p class="text-h6 font-weight-regular">
+                  New version of the <a href="https://ecosheds.github.io/northeast-bto-model/">Northeast Brook Trout Occupancy Model</a><v-icon small class="align-self-center">mdi-open-in-new</v-icon> released along with new documentation. Also, brand new documentation for the <a href="https://ecosheds.github.io/necd/">Northeast Catchment Delineation</a><v-icon small class="align-self-center">mdi-open-in-new</v-icon>.
+                </p>
+
                 <div class="body-1 font-weight-bold text-overline">March 1, 2022</div>
                 <p class="text-h6 font-weight-regular">
                   Welcome to our new website! The EcoSHEDS homepage has been migrated from <a href="https://ecosheds.org">https://ecosheds.org</a> to <a href="https://usgs.gov/apps/ecosheds">https://usgs.gov/apps/ecosheds</a>.
@@ -212,6 +217,16 @@
                 url="https://www.usgs.gov/apps/ecosheds/tse/"
               >
                 A simple interactive data visualization tool for exploring patterns in time series data such as precipitation, rainfall, and streamflow.
+              </ProjectCard>
+            </v-col>
+            <v-col cols="12" md="12" lg="6" xl="4" :class="[$vuetify.breakpoint.mobile ? 'px-2' : 'px-4', 'py-4']">
+              <ProjectCard
+                title="Coldwater Refugia in Northeast National Parks"
+                subtitle="Stream Temp. and Brook Trout Occupancy Data Visualization Tool"
+                image="img/projects/ice-nps-ner.png"
+                url="https://www.usgs.gov/apps/ecosheds/ice-nps-ner/"
+              >
+                An adaptation of the Northeast Interactive Catchment Explorer for exploring coldwater refugia across National Park Service units in the Northeast. Part of the <a href="https://www.climaterefugia.org/coldwater-refugia">Refugia Research Coalition</a>.
               </ProjectCard>
             </v-col>
             <v-col cols="12" md="12" lg="6" xl="4" :class="[$vuetify.breakpoint.mobile ? 'px-2' : 'px-4', 'py-4']">
