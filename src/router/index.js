@@ -1,10 +1,7 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
-import Home from '@/views/Home'
-import WestbrookTroutPredictions from '@/views/WestbrookTrout/Predictions'
-
-Vue.use(VueRouter)
+import Home from '@/views/Home.vue'
+import WestbrookTroutPredictions from '@/views/WestbrookTrout/Predictions.vue'
 
 const routes = [
   {
@@ -19,9 +16,9 @@ const routes = [
   }
 ]
 
-const router = new VueRouter({
-  // mode: 'history',
-  base: process.env.BASE_URL,
+// Hash history lets the site run from any subdirectory without server rewrites
+const router = createRouter({
+  history: createWebHashHistory(),
   routes
 })
 

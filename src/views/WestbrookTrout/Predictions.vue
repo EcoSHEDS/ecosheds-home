@@ -1,17 +1,16 @@
 <template>
   <div>
     <v-app-bar
-      app
       color="blue-grey"
-      dark
+      theme="dark"
       style="margin-top:68px"
     >
-      <v-toolbar-title class="text-h5">
+      <v-toolbar-title class="text-headline-small ms-4">
         West Brook Trout / Predictions
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <v-btn text to="/" exact color="white"><v-icon left>mdi-chevron-left</v-icon> Back to EcoSHEDS</v-btn>
+        <v-btn variant="text" to="/" color="white"><v-icon start>mdi-chevron-left</v-icon> Back to EcoSHEDS</v-btn>
       </v-toolbar-items>
     </v-app-bar>
 
@@ -19,14 +18,14 @@
       <section>
         <v-container fluid>
           <v-row>
-            <v-col cols="12" sm="10" md="8" xl="6" class="text-h6 font-weight-regular">
+            <v-col cols="12" sm="10" md="8" xl="6" class="text-title-large font-weight-regular">
               <v-card class="elevation-0">
-                <v-card-title primary-title>
-                  <div class="text-h4">West Brook Trout Growth Model Predictions</div>
+                <v-card-title class="text-wrap">
+                  <div class="text-headline-large">West Brook Trout Growth Model Predictions</div>
                 </v-card-title>
 
-                <v-card-text class="body-1 black--text">
-                  <div class="text-subtitle-2 mb-4">by <a href="https://www.usgs.gov/staff-profiles/benjamin-h-letcher">Ben Letcher</a>, Eastern Ecological Science Center</div>
+                <v-card-text class="text-body-large text-black">
+                  <div class="text-title-small mb-4">by <a href="https://www.usgs.gov/staff-profiles/benjamin-h-letcher">Ben Letcher</a>, Eastern Ecological Science Center</div>
                   <div id="observablehq-101e6c76" class="observablehq-container">
                     <div class="observablehq-introText" style="max-width:800px"></div>
                     <v-divider class="my-4"></v-divider>

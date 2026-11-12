@@ -4,15 +4,18 @@
 
 ### Dependencies
 
-Install node.js dependencies
+Use Node.js v24 (see `.nvmrc`), then install dependencies
 
 ```sh
+nvm use
 npm install
 ```
 
 ### Configuration
 
-Configure the application using `.env` files per vue cli [Configuration Reference](https://cli.vuejs.org/config/). All variables should be defined using local files (e.g. `.env.*.local` ), which are not tracked by git.
+Configure the application using `.env` files per the Vite [Env Variables and Modes](https://vite.dev/guide/env-and-mode) guide. All variables should be defined using local files (e.g. `.env.*.local` ), which are not tracked by git.
+
+`BASE_URL` is the public path of the deployed site (e.g. `/apps/ecosheds/`). `vite.config.js` reads this variable and sets the Vite `base` option.
 
 See `.env` for list of required variables.
 
@@ -22,6 +25,12 @@ Start development server, then navigate to http://localhost:8080
 
 ```sh
 npm run serve
+```
+
+Check the code with ESLint
+
+```sh
+npm run lint
 ```
 
 ### Observable Embeds
@@ -79,8 +88,14 @@ npm run stage
 
 Build for production
 
-```
+```sh
 npm run build
+```
+
+Preview the production build locally
+
+```sh
+npm run preview
 ```
 
 ## Deploy
